@@ -18,7 +18,7 @@ def stringR(size=10, chars=string.ascii_lowercase + string.digits): #Randomizer 
 def correoR(largo): #Randomizer para crear strings, que luego al ser concatenados con un @gmail.com, se crea un correo aleatorio.
     return ''.join(random.choice(string.ascii_letters) for x in range(largo))
     
-def escrituraL(elemento, texto):
+def escrituraL(elemento, texto): #función para escribir cada letra con retrasos de 0.3s, para imitar a una persona
     for character in texto:
         elemento.send_keys(character)
         time.sleep(0.3)
