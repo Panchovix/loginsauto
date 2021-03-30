@@ -102,17 +102,17 @@ def RestablecerC():
         username = browser.find_element_by_id('usuario')
         emailBunicoR = correoR(8) + '@gmail.com' #Crea un mail aleatorio y luego lo concatena con @gmail.com
         username.send_keys(emailBunicoR)
-        button = browser.find_element_by_id('btnRecordar') #se busca el botón de registro
-        button.click() #Se clickea en el botón de registro luego de ingresar todos los datos
+        button = browser.find_element_by_id('btnRecordar') #se busca el botón de restablecer contraseña
+        button.click() #Se clickea en el botón de restablecer contraseña luego de ingresae el correo
     elif (mailopcion == 2):
         correoreal = input("Ingresa el correo al cual se le quiere recuperar la contraseña : ")
         username = browser.find_element_by_id('usuario')
         username.send_keys(correoreal)
-        button = browser.find_element_by_id('btnRecordar') #se busca el botón de registro
-        button.click() #Se clickea en el botón de registro luego de ingresar todos los datos
+        button = browser.find_element_by_id('btnRecordar') #se busca el botón de restablecer contraseña
+        button.click() #Se clickea en el botón de restablecer contraseña luego de ingresae el correo
     else:
         print ('error')
-print ('Selecciona 1 para Login (y poder modificar la contraseña), 2 Para Registro o 3 para restablecer contrasenia')
+print ('Selecciona 1 para Login (y poder modificar la contraseña), 2 Para Registro o 3 para restablecer contraseña')
 opcion = int(input("Ingresa la opción : "))
 if (opcion == 1):
     LoginBIP()
