@@ -44,7 +44,7 @@ def dentroLogin(): #función creada para poder salir o modificar la contraseña,
             print ('error')
              
 def RegistroCC(): #Código para registro de cuenta con datos aleatorios en CC.
-    pyautogui.click(507, 455) #clickea el botón de registró en una pantalla de 1440x900
+    pyautogui.click(507, 455) #clickea el botón de registro en una pantalla de 1440x900
     usuarioCC = browser.find_element_by_id('input-register-username') #Obtiene id de usuario en la página
     escrituraL(usuarioCC, stringR()) # Ingresa un usuario aleatorio
     emailCC = browser.find_element_by_id('input-register-email') #Obtiene el ID de mail
