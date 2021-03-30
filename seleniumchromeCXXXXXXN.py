@@ -79,11 +79,11 @@ def LoginCC():
     button = browser.find_element_by_id('input-login-submit') #busca el botón para ingresar
     button.click() #lo apreta
     time.sleep(30) #la página pide captcha la primera vez, se dan 30 segundos para ingresarlo (al hacerlo muchas veces con la misma IP, el tiempo de cada captacha sube mucho si estos son fallados)
-    try: #ve si se paso el captacha o no
-        browser.find_element_by_id('input-login-submit') #si no se paso, se encuentra el botón nuevamente
+    try: #verifica si se pudo hacer login luego de completar el captcha
+        browser.find_element_by_id('input-login-submit') #si se realizó el captcha manualmente, verifica si existe el botón para nuevamente hacer login
         button.click() #apreta el botón nuevamente luego del captcha
         dentroLogin() #opciones dentro del login para salir o modificar contraseña
-    except NoSuchElementException:
+    except NoSuchElementException: #en caso de que no vea el botón de login
         dentroLogin() ##opciones dentro del login para salir o modificar contraseña
         
    
