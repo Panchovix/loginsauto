@@ -106,7 +106,7 @@ def RestablecerC():
         button.click() #Se clickea en el botón de reset de contraseña luego de ingresar el correo
     else:
         print ('error')
-print ('Selecciona 1 para Login (y poder modificar la contraseña), 2 Para Registro o 3 para restablecer contrasenia')
+print ('Selecciona 1 para Login (y poder modificar la contraseña), 2 Para Registro o 3 para restablecer contraseña')
 opcion = int(input("Ingresa la opción : "))
 if (opcion == 1):
     LoginCC()
