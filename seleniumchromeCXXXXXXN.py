@@ -23,7 +23,7 @@ def escrituraL(elemento, texto): #función para escribir cada letra con retrasos
         elemento.send_keys(character)
         time.sleep(0.3)
     
-def dentroLogin():
+def dentroLogin(): #función creada para poder salir o modificar la contraseña, luego de haber realizado un login correctamente.
         print ('Ingrese 0 para terminar, o 1 para modificar la contraseña')
         loginop = int(input())
         if (loginop == 0):
