@@ -10,6 +10,7 @@ import time
 screenWidth, screenHeight = pyautogui.size() #obtiene resolución de la pantalla, en este caso 1440*900
 browser = Chrome()
 browser.get('https://www.cuantocabron.com/login')
+browser.maximize_window()
 #browser.close()
 
 def stringR(size=10, chars=string.ascii_lowercase + string.digits): #Randomizer para crear strings, de largo 10 aleatorios.
