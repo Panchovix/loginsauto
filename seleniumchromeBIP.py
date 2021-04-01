@@ -9,6 +9,7 @@ import time
 screenWidth, screenHeight = pyautogui.size() #obtiene resolución de la pantalla, en este caso 1440*900
 browser = Chrome()
 browser.get('https://bip.cl/canasta')
+browser.maximize_window()
 #browser.close()
 
 def calculaDV(rut): #Calcula dígito verificador para obtener un RUT válido
